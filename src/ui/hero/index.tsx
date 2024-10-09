@@ -83,8 +83,129 @@ function Hero() {
           icon=""
           btnStyles={`bg-[#002A7F] rounded-lg mt-5`}
         />
+        {!mobilescreen ? (
+          <div className="flex lg:flex-row flex-col items-center gap-3 mt-8  w-full ">
+            {hovercontents.map((item) => (
+              <div
+                key={item.id}
+                onMouseEnter={() => handleMouseEnter(item.id)}
+                className="relative"
+              >
+                <img
+                  src={item.img}
+                  alt=""
+                  className={`${
+                    fullview === item.id ? "w-[754px]" : "w-[343px]"
+                  } h-[453px] rounded-lg object-cover transition-all duration-500 cursor-pointer`}
+                  loading="lazy"
+                />
+                {fullview === item.id && (
+                  <>
+                    <Button
+                      title={`${item.tag.toUpperCase()}`}
+                      handleClick={() => {}}
+                      icon=""
+                      btnStyles={`w-fit h-fit px-2 py-1 left-5 top-5 rounded-2xl bg-white absolute ${
+                        showText
+                          ? "opacity-100 -translate-y-1"
+                          : "opacity-0 translate-y-0"
+                      } transition-all duration-300`}
+                      textStyle="text-xs font-medium"
+                    />
+                    <div
+                      className={`flex flex-col items-start absolute bottom-0 left-0 right-0 transition-all duration-300 lg:px-7 px-3 py-5 bg-gradient-to-t from-[#271E9A] to-[#1A0ECF00] ${
+                        showText
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-5"
+                      }`}
+                    >
+                      <span className="text-2xl font-bold text-white">
+                        {item.title}
+                      </span>
+                      <span className="text-md text-white font-medium">
+                        {item.subtitle}
+                      </span>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <Swiper
+            onSwiper={(swiper: SwiperCore) => {
+              console.log("swiper", swiper.activeIndex);
+            }}
+            modules={[Navigation, Pagination, Autoplay]}
+            autoplay={{ delay: 5000 }}
+            loop
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            className="px-5 w-full"
+            onSlideChange={(swiper: SwiperCore) =>
+              setActiveIndex(swiper.activeIndex)
+            }
+          >
+            {hovercontents.map((item, i) => (
+              <SwiperSlide className=" rounded-b-xl relative" key={item.id}>
+                <div className=" rounded">
+                  {/* <span className="text-white">{item.subtitle}</span>
+                   */}
+                  <img
+                    src={item.img}
+                    className={`w-[349px] h-[349px] object-cover transition-all duration-500 cursor-pointer rounded-xl`}
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
 
-       
+                <>
+                  <Button
+                    title={`${item.tag.toUpperCase()}`}
+                    handleClick={() => {}}
+                    icon=""
+                    btnStyles={`w-fit h-fit px-2 py-1 left-5 top-5 rounded-2xl bg-white absolute ${
+                      activeindex !== null && showContent
+                        ? "opacity-100 -translate-y-1"
+                        : "opacity-0 translate-y-0"
+                    } transition-all duration-300`}
+                    textStyle="text-[10px] font-medium"
+                  />
+                  <div
+                    className={`flex flex-col items-start rounded-b-xl gap-y-2 absolute bottom-0 left-0 right-0 transition-all duration-300  px-3 py-3 bg-gradient-to-t from-[#271E9A] to-[#1A0ECF00] ${
+                      activeindex !== null && showContent
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-5"
+                    }`}
+                  >
+                    <span className="text-lg font-bold text-white leading-[20px]">
+                      {item.title}
+                    </span>
+                    <span className="text-sm text-white font-medium">
+                      {item.subtitle}
+                    </span>
+                  </div>
+                </>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
       <Section />
       <Partners />
