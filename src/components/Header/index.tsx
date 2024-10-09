@@ -71,7 +71,7 @@ function Header() {
             leaveFrom="-translate-x-0"
             leaveTo="-translate-x-full"
           >
-            <div className="bg-white shadow-md px-5 pt-4 absolute w-full h-[280px] left-0 right-0 top-[4.2rem]">
+            <div className="bg-white shadow-md px-5 pt-4 absolute w-full h-[265px] left-0 right-0 top-[4.2rem]">
               <ul className="flex flex-col  gap-y-5 items-start text-primary-200">
                 <Link
                   to={"/"}
