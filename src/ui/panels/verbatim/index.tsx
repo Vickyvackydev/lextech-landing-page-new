@@ -14,14 +14,14 @@ function Verbatim({
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="lg:text-[56.02px] text-[30px] font-normal text-white lg:leading-[60px] leading-tight">
+        <span className="lg:text-[56.02px] text-[30px] font-normal text-primary-200 lg:leading-[60px] leading-tight">
           Verbatim Reporting <br /> Academy
         </span>
-        <span className="text-[#FFFFFF82] font-normal lg:text-[56.02px] text-4xl leading-tight">
+        <span className="text-primary-100 font-normal lg:text-[56.02px] text-4xl leading-tight">
           Court reporting and <br className="lg:visible hidden" />{" "}
           transcription.
         </span>
-        <span className="text-white font-normal  text-[20px] lg:w-[872px] w-full mt-4">
+        <span className="text-primary-200 font-normal  text-[20px] lg:w-[872px] w-full mt-4">
           Our Verbatim Reporting Academy strives to rank among the best
           providers of high-quality training and certification of Verbatim Court
           Reporters and scopists, and providing ancillary services towards
@@ -46,20 +46,20 @@ function Verbatim({
         </div>
 
         <div className="mt-10">
-          <span className="text-white font-normal  lg:text-[34.73px] text-2xl w-[929px]  lg:leading-[45px] leading-normal">
+          <span className="text-primary-200 font-normal  lg:text-[34.73px] text-2xl w-[929px]  lg:leading-[45px] leading-normal">
             Our Academy trains and certifies a large pool of verbatim reporters
             and scopists to serve both the Nigerian and African markets
           </span>
         </div>
         <div className="flex flex-col gap-y-6 mt-10">
           {verbatims.map((item) => (
-            <div className="flex items-start justify-start gap-x-4 border-b pb-4 border-[#E7E7E763]">
+            <div className="flex items-start justify-start gap-x-4 border-b pb-4 border-[#0D076980]">
               <img
                 src="./icons/circle.svg"
                 className="w-[15px] h-[15px] mt-2"
                 alt=""
               />
-              <p className="text-[20px] font-normal text-white">{item}</p>
+              <p className="text-[20px] font-normal text-primary-200">{item}</p>
             </div>
           ))}
         </div>

@@ -13,13 +13,13 @@ function Affidavit({
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="lg:text-[56.02px] text-4xl font-normal text-white">
+        <span className="lg:text-[56.02px] text-4xl font-normal text-primary-200">
           e-Notary / e-Affidavit
         </span>
-        <span className="text-[#FFFFFF82] font-normal lg:text-[56.02px] text-4xl leading-tight">
+        <span className="text-primary-100 font-normal lg:text-[56.02px] text-4xl leading-tight">
           Get your Verifiable <br /> Affidavit.
         </span>
-        <span className="text-white font-normal  text-[20px] lg:w-[872px] w-full mt-4">
+        <span className="text-primary-200 font-normal  text-[20px] lg:w-[872px] w-full mt-4">
           The e-Affidavit is an online platform that allows individuals and
           businesses to create, sign, and notarize affidavits and oaths
           remotely. Our user-friendly interface provides a convenient and secure
@@ -43,7 +43,7 @@ function Affidavit({
           />
         </div>
         <div className="flex items-start flex-col mt-10 w-full">
-          <span className="text-white font-normal text-[25.92px]">
+          <span className="text-[#2C5282] font-normal text-[25.92px]">
             How e-Notary works
           </span>
           <div className="mt-10 gap-5 grid lg:grid-cols-3 grid-cols-1 lg:w-[872px] w-full">

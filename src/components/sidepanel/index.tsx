@@ -51,10 +51,10 @@ function SidePanel({
         leaveFrom="translate-x-0"
         leaveTo="translate-x-full"
       >
-        <div className="fixed overflow-y-auto top-0 right-0 h-full lg:w-[1072px] w-full bg-[#0D0769] z-40 shadow-lg">
+        <div className="fixed overflow-y-auto top-0 right-0 h-full lg:w-[1072px] w-full bg-white z-40 shadow-lg">
           <button
             onClick={hide}
-            className="absolute shadow-lg hover:-translate-y-5 transform transition-all duration-300 top-10 lg:left-8 left-6 text-black"
+            className="absolute  hover:-translate-y-5 transform transition-all duration-300 top-10 lg:left-8 left-6 text-black"
           >
             <img
               src="./icons/close-btn.svg"

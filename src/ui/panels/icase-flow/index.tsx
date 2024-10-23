@@ -14,13 +14,13 @@ function IcaseFlow({
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="lg:text-[56.02px] font-normal text-white text-4xl">
+        <span className="lg:text-[56.02px] font-normal text-primary-200 text-4xl">
           iCASEFLOW
         </span>
-        <span className="text-[#FFFFFF82] font-normal lg:text-[56.02px] text-4xl leading-tight">
+        <span className="text-primary-100 font-normal lg:text-[56.02px] text-4xl leading-tight">
           Innovative Case <br /> Management System
         </span>
-        <span className="text-white font-normal  lg:text-[20px] text-lg lg:w-[872px] w-full mt-4">
+        <span className="text-primary-200 font-normal  lg:text-[20px] text-lg lg:w-[872px] w-full mt-4">
           Our Innovative Case Management System (iCASEFLOW) for the
           Court/Police/Ministry of Justice, automates workflow processes for
           these and other stakeholders by eliminating bottlenecks that hamper
@@ -50,7 +50,7 @@ function IcaseFlow({
             textStyle="text-white font-medium text-[25.92px]"
             handleClick={() => setTextSlide("registry")}
             btnStyles={` ${
-              textSlide === "registry" ? "bg-[#261EA6]" : "bg-[#1A138C75]"
+              textSlide === "registry" ? "bg-[#261EA6]" : "bg-[#261EA6CC]"
             } rounded-lg w-full h-full py-7 flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
           />
           <Button
@@ -60,7 +60,7 @@ function IcaseFlow({
             textStyle="text-white font-medium text-2xl"
             handleClick={() => setTextSlide("court")}
             btnStyles={` ${
-              textSlide === "court" ? "bg-[#261EA6]" : "bg-[#1A138C75]"
+              textSlide === "court" ? "bg-[#261EA6]" : "bg-[#261EA6CC]"
             } rounded-lg w-full h-full py-8 flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
           />
         </div>
@@ -75,7 +75,7 @@ function IcaseFlow({
           leaveTo="translate-y-full"
           className="mt-10"
         >
-          <span className="text-white font-normal  text-[20px] w-[872px]">
+          <span className=" font-normal text-primary-200  text-[20px] w-[872px]">
             Registry staff easily receive and review all cases filed through the
             electronic filing system after confirmation of payment. Cases
             approved as properly filed are electronically presented to the Chief
@@ -95,7 +95,7 @@ function IcaseFlow({
           leaveTo="translate-y-full"
           className="mt-10"
         >
-          <span className="text-white font-normal  text-[20px] w-[872px] ">
+          <span className="text-primary-200 font-normal  text-[20px] w-[872px] ">
             The e-Court system enables the honourable Judges to gain access to
             the electronic case files of cases assigned to their courts.
             Directions by the Court as to court sitting dates and time including

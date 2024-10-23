@@ -14,13 +14,13 @@ function Eprobate({
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="lg:text-[56.02px] text-4xl font-normal text-white">
+        <span className="lg:text-[56.02px] text-4xl font-normal text-primary-200">
           e-Probate
         </span>
-        <span className="text-[#FFFFFF82] font-normal lg:text-[56.02px] text-4xl leading-tight">
+        <span className="text-primary-100 font-normal lg:text-[56.02px] text-4xl leading-tight">
           Streamlining probate <br /> matters
         </span>
-        <span className="text-white font-normal  text-[20px] lg:w-[872px] w-full mt-4">
+        <span className="text-primary-200 font-normal  text-[20px] lg:w-[872px] w-full mt-4">
           The e-Probate service is a digital platform transforming probate
           matters and practice in Enugu State, aimed at speeding up the probate
           administration process & management using technology.
@@ -42,7 +42,7 @@ function Eprobate({
           />
         </div>
         <div className="flex items-start flex-col mt-10">
-          <span className="text-white font-normal text-[25.92px]">
+          <span className="text-[#2C5282] font-normal text-[25.92px]">
             How e-Probate works
           </span>
           <div className="mt-10 flex lg:flex-row flex-col gap-5 ">
@@ -53,7 +53,7 @@ function Eprobate({
               textStyle="text-white font-medium text-lg"
               handleClick={() => setTextSlide("registry")}
               btnStyles={` ${
-                textSlide === "registry" ? "bg-[#261EA6]" : "bg-[#1A138C75]"
+                textSlide === "registry" ? "bg-[#261EA6]" : "bg-[#473ED3]"
               } rounded-lg w-full h-full py-8 flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
             />
             <Button
@@ -63,7 +63,7 @@ function Eprobate({
               textStyle="text-white font-medium text-lg text-start"
               handleClick={() => setTextSlide("service")}
               btnStyles={` ${
-                textSlide === "service" ? "bg-[#261EA6]" : "bg-[#1A138C75]"
+                textSlide === "service" ? "bg-[#261EA6]" : "bg-[#473ED3]"
               } rounded-lg w-full h-full py-[18.5px] flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
             />
             <Button
@@ -73,7 +73,7 @@ function Eprobate({
               textStyle="text-white font-medium text-[16px] text-start"
               handleClick={() => setTextSlide("process")}
               btnStyles={` ${
-                textSlide === "process" ? "bg-[#261EA6]" : "bg-[#1A138C75]"
+                textSlide === "process" ? "bg-[#261EA6]" : "bg-[#473ED3]"
               } rounded-lg w-full h-full  py-[23px] flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
             />
           </div>
@@ -90,7 +90,7 @@ function Eprobate({
           leaveTo="translate-y-full"
           className="mt-10"
         >
-          <span className="text-white font-normal  text-[20px] w-[872px]">
+          <span className="text-primary-200 font-normal  text-[20px] w-[872px]">
             Registry staff easily receive and review all cases filed through the
             electronic filing system after confirmation of payment. Cases
             approved as properly filed are electronically presented to the Chief
@@ -110,7 +110,7 @@ function Eprobate({
           leaveTo="translate-y-full"
           className="mt-10"
         >
-          <span className="text-white font-normal  text-[20px] w-[872px] ">
+          <span className="text-primary-200 font-normal  text-[20px] w-[872px] ">
             From your dashboard, apply for a service and provide requested
             details, upload documents, make payment, and provide additional info
             if requested.
@@ -127,7 +127,7 @@ function Eprobate({
           leaveTo="translate-y-full"
           className="mt-10"
         >
-          <span className="text-white font-normal  text-[20px] w-[872px] ">
+          <span className="text-primary-200 font-normal  text-[20px] w-[872px] ">
             After you submit your application, it will be reviewed, and
             additional information may be requested. All requirements must be
             fulfilled until the grant or order is issued or denied.
