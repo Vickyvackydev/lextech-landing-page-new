@@ -4,6 +4,7 @@ import HomePage from "./features/homepage";
 import AboutPage from "./features/aboutpage";
 import Blog from "./features/blog";
 import ContactPage from "./features/contact";
+import ViewBlog from "./features";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route element={<AboutPage />} path="/about" />
       <Route element={<Blog />} path="/blog" />
       <Route element={<ContactPage />} path="/contact" />
+      <Route element={<ViewBlog />} path="/view" />
     </Routes>
   );
 }

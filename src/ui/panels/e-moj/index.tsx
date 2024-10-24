@@ -7,11 +7,13 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="text-[56.02px] font-normal text-white">e-MoJ</span>
-        <span className="text-[#FFFFFF82] font-normal text-[56.02px] leading-tight">
+        <span className="text-[56.02px] font-normal text-primary-200">
+          e-MoJ
+        </span>
+        <span className="text-primary-100 font-normal text-[56.02px] leading-tight">
           Get your Verifiable <br /> Affidavit.
         </span>
-        <span className="text-white font-normal  text-[20px] w-[872px] mt-4">
+        <span className="text-primary-200 font-normal  text-[20px] w-[872px] mt-4">
           The e-Affidavit is an online platform that allows individuals and
           businesses to create, sign, and notarize affidavits and oaths
           remotely. Our user-friendly interface provides a convenient and secure
@@ -35,7 +37,7 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
           />
         </div>
         <div className="flex items-start flex-col mt-10">
-          <span className="text-white font-normal text-[25.92px]">
+          <span className="text-[#2C5282] font-normal text-[25.92px]">
             How e-Moj works
           </span>
           <div className="mt-10 gap-5 grid grid-cols-3 w-[872px]">
