@@ -7,20 +7,20 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
   return (
     <SidePanel show={slide} hide={setSlide}>
       <div className="flex flex-col items-start gap-y-2">
-        <span className="text-[56.02px] font-normal text-primary-200">
+        <span className="lg:text-[56.02px] text-4xl font-normal text-primary-200">
           e-MoJ
         </span>
-        <span className="text-primary-100 font-normal text-[56.02px] leading-tight">
+        <span className="text-primary-100 font-normal lg:text-[56.02px] text-4xl leading-tight">
           Get your Verifiable <br /> Affidavit.
         </span>
-        <span className="text-primary-200 font-normal  text-[20px] w-[872px] mt-4">
+        <span className="text-primary-200 font-normal  text-[20px] lg:w-[872px] w-full mt-4">
           The e-Affidavit is an online platform that allows individuals and
           businesses to create, sign, and notarize affidavits and oaths
           remotely. Our user-friendly interface provides a convenient and secure
           way to handle legal documents without needing in-person visits to
           notary offices or the courts.
         </span>
-        <div className="mt-4 space-x-5">
+        <div className="mt-4 flex lg:flex-row flex-col gap-5">
           <Button
             title="Contact sales"
             icon=""
@@ -40,7 +40,7 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
           <span className="text-[#2C5282] font-normal text-[25.92px]">
             How e-Moj works
           </span>
-          <div className="mt-10 gap-5 grid grid-cols-3 w-[872px]">
+          <div className="mt-10 gap-5 grid lg:grid-cols-3 grid-cols-1 lg:w-[872px] w-full">
             <Button
               title="Select A Template"
               icon="./icons/edit.svg"
@@ -55,7 +55,7 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
               iconStyle="w-[29.17px] h-[29.17px]"
               textStyle="text-white font-medium text-lg text-start"
               handleClick={() => {}}
-              btnStyles={` bg-[#003298] w-full h-full  rounded-lg w-[311px] h-[149px] flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
+              btnStyles={` bg-[#003298] w-full h-full  rounded-lg py-7 flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
             />
             <Button
               title="Make Payments"
@@ -71,7 +71,7 @@ function Emoj({ slide, setSlide }: { slide: boolean; setSlide: () => void }) {
               iconStyle="w-[29.17px] h-[29.17px]"
               textStyle="text-white font-medium text-[17.3px] text-start"
               handleClick={() => {}}
-              btnStyles={` bg-[#1749AE] w-full h-full rounded-lg  flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
+              btnStyles={` bg-[#1749AE] w-full h-full py-7 rounded-lg  flex items-start justify-center gap-y-4 px-10 flex-col-reverse`}
             />
             <Button
               title="Get Verified Affidavit"
