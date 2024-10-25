@@ -4,7 +4,7 @@ import HomePage from "./features/homepage";
 import AboutPage from "./features/aboutpage";
 import Blog from "./features/blog";
 import ContactPage from "./features/contact";
-import ViewBlog from "./features";
+import ViewBlog from "./features/viewblog";
 
 function App() {
   return (
